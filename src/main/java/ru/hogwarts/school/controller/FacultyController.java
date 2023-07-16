@@ -37,6 +37,7 @@ public class FacultyController {
 
     @DeleteMapping("{id}")
     public Faculty remove(@PathVariable(required = false, value = "id") int idInt) {
+
         Long id = Long.valueOf(idInt);
         return facultyService.removeFaculty(id);
     }
