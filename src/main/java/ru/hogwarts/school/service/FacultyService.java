@@ -31,6 +31,7 @@ public class FacultyService {
 
     public Faculty removeFaculty(Long id) {
         Faculty faculty = faculties.get(id);
+
         faculties.remove(id);
         return faculty;
     }
